@@ -1,0 +1,349 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* *Aspectos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    font-family:'lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    background-color:#fbfbfb;
+    color: #0f0f0f;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    height: 90px;
+    width: 100%;
+    background-color: #fbfbfb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 10px -5px #5f5f5f;
+    border-bottom: 1px solid black;
+}
+
+nav {
+    display: none;
+}
+
+body.mobile-menu-active img#close-menu {
+    display: block;
+}
+body.mobile-menu-active img#open-menu {
+    display: none;
+}
+
+body.mobile-menu-active header {
+    height: 100vh;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    transition: heigth 0.3ms;
+}
+
+body.mobile-menu-active nav {
+    display: block;
+    width: 100%;
+    height: 50%;
+}
+
+body.mobile-menu-active ul#menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    height: 100%;
+}
+
+body.mobile-menu-active menu-active {
+    overflow: hidden;
+}
+
+
+
+/* Para quitar los puntos a los items de listas */
+ul#menu {
+    display: flex;
+    font-size: 20px;  
+
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* en tipografia generalmente usamos numeros pares */
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+p {
+    margin: 16px 0;
+    line-height: 1.2;
+	font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* *Funciones del menú */
+
+li#menu-items, a:hover {
+    background-color: rgba(175, 89, 158, 0.3);
+    transition: background-color 0, 3s;
+}
+
+li.menu-item, a {
+    padding: 16px;
+    display: inline-block;
+}
+
+/* Estilos para clase active */
+li.menu-item:hover,
+li.mobile-menu-active {
+    background: rgba(175, 89, 158, 0.3);
+    transition: background-color 0.3s;
+}
+
+
+.contact-links:hover, .menu-item:hover {
+    scroll-behavior: smooth;
+    height: 50px; 
+    
+} 
+/** Diseño de imagenes  */
+
+/* Logo Eidos imagen en header */
+.logo {
+    width: 120px;
+}
+/* imagen de presentación "foto" */
+img.foto {
+	border-radius: 50%;
+	width: 300px;
+}
+/* imagenes de los logos -enlaces- */
+img.imagen {
+   margin: 32px;
+   padding: 8px;
+   border-radius: 4px;
+   width: 80px;
+}
+
+ul#contact-links {
+    display:flex;
+    margin: 16px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+
+/* *Diseño de Secciones */
+/* General */
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    min-height: 100vh;
+    /* Lugar para el header */
+    padding-top: 120px;
+    max-width: 100%;
+}
+/* sección de inicio */
+
+section#inicio {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+
+.presentacion {
+    margin-bottom: 20px;
+    
+}
+/* sección de contacto */
+section#contacto {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+
+}
+
+article.hablemos {
+    background-color: rgba(175, 89, 158, 0.3);
+    text-align:center;
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: 10%;
+    padding: 10px;
+
+}   
+
+
+/* *Articulos  */
+
+/* articulo de presentación */
+article.presentacion {
+    max-width: 100%;
+    text-align: start;
+    margin-left: 0.5%;
+    padding: 10px;
+    border-radius: 15px;
+}
+/* general */
+article {
+    width: 50%;
+    text-align: start;
+    margin-left: 20%%;
+    padding: 10px;
+    
+    border-radius: 15px;
+    width: 100vh;
+    height: min-content;
+
+    max-width: 100%;
+}
+
+/* Botón hamburguesa */
+#menu-button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 26px;
+    width: 40px;
+    height: 40px;
+}
+
+img#close-menu {
+    display: none;
+}
+/* *Funciones del boton */
+
+.button {
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+a.button {
+    background-color: #af599e;
+    color: #fbfbfb;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    display: inline-block;
+   
+}
+
+
+a.button:hover {
+    background-color:  #af599e;
+    transition: backgroud-color 0,3s;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+footer p {
+    color: #fbfbfb;
+    font-size: medium;
+}
+
+footer {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #af599e;
+    color: #fbfbfb;
+}
+/* Estilos desktop */
+
+@media (min-width:1024px) {
+
+    h1 {
+        font-size: 48px;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    section#inicio {
+        flex-direction: row;
+    }
+
+    article {
+        width: 50%;
+    }
+
+    ul#contact-link li {
+        margin: 32px;
+    }
+/* ajustes para menu  */
+
+    #menu-button {
+        display: none;
+    }
+    
+    nav {
+        display: block;
+    }
+        
+    body.mobile-menu-active header { 
+        height: 90px;
+        align-items: center;
+    }
+    
+    body.mobile-menu-active nav {
+        height: auto;
+        width: auto;
+    }
+    body.mobile-menu-active .navegador {
+        flex-direction: row;}
+
+        
+    }
