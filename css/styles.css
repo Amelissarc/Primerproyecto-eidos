@@ -78,7 +78,7 @@ body.mobile-menu active menu-active {
 /* Para quitar los puntos a los items de listas */
 ul#menu {
     display: flex;
-    font-size: 20px;  
+    font-size: 15px;  
 
 }
 
@@ -154,7 +154,7 @@ img.foto {
 }
 /* imagenes de los logos -enlaces- */
 img.imagen {
-   margin: 32px;
+   margin: 36px;
    padding: 8px;
    border-radius: 4px;
    width: 80px;
@@ -177,7 +177,6 @@ main {
 
 section {
     display: flex;
-    flex-direction:column;
     align-items: center;
     justify-content: center;
     padding: 50px;
@@ -265,8 +264,8 @@ img#close-menu {
 a.button {
     background-color: #af599e;
     color: #fbfbfb;
-    padding: 12px 20px;
-    border-radius: 50px;
+    padding: 0.6%
+    border-radius: 10px;
     font-size: 20px;
     display: inline-block;
    
@@ -318,7 +317,7 @@ footer {
     }
 
     ul#contact-link li {
-        margin: 32px;
+        margin: 16px;
     }
 /* ajustes para menu  */
 
