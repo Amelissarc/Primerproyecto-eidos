@@ -78,7 +78,7 @@ body.mobile-menu active menu-active {
 /* Para quitar los puntos a los items de listas */
 ul#menu {
     display: flex;
-    font-size: 30px;  
+    font-size: 20px;  
 
 }
 
