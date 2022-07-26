@@ -3,7 +3,7 @@ const menuBtn = document.querySelector ('#menu-button');
 
 
 menuBtn.addEventListener ('click', function () {
-        document.body.classList.toggle ('mobile-menu-active');
+        document.body.classList.toggle ('mobile-menu active');
 });
 
 menuItems.forEach (function (item) {
@@ -11,7 +11,7 @@ menuItems.forEach (function (item) {
     item.addEventListener ('click',function () {
         
         document.body.classList.remove 
-        ('mobile-menu-active')
+        ('mobile-menu active')
         
         const currentItem = document.querySelector 
         ('.active');
