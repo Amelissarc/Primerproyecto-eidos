@@ -42,14 +42,14 @@ nav {
     display: none;
 }
 
-body.mobile-menu active img#close-menu {
+body.mobile-menu-active img#close-menu {
     display: block;
 }
-body.mobile-menu active img#open-menu {
+body.mobile-menu-active img#open-menu {
     display: none;
 }
 
-body.mobile-menu active header {
+body.mobile-menu-active header {
     height: 100vh;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -62,14 +62,14 @@ body.mobile-menu active nav {
     height: 50%;
 }
 
-body.mobile-menu active ul#menu {
+body.mobile-menu-active ul#menu {
     flex-direction: column;
     align-items: center;
     justify-content:space-around;
     height: 100%;
 }
 
-body.mobile-menu active menu-active {
+body.mobile-menu-active menu-active {
     overflow: hidden;
 }
 
@@ -266,7 +266,7 @@ a.button {
     background-color: #af599e;
     color: #fbfbfb;
     padding: 12px 20px
-    border-radius: 50px;
+    border-radius: 10px;
     font-size: 20px;
     display: inline-block;
    
