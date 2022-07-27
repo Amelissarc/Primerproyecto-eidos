@@ -122,7 +122,6 @@ img {
 li#menu-items, a:hover {
     background-color: rgba(175, 89, 158, 0.3);
     transition: background-color 0, 3s;
-    padding:0.6%
 }
 
 li.menu-item, a {
@@ -139,7 +138,7 @@ li.mobile-menu active {
 
 .contact-links:hover, .menu-item:hover {
     scroll-behavior: smooth;
-    height: 20px; 
+    height: 25px; 
     
 } 
 /** Diseño de imagenes  */
