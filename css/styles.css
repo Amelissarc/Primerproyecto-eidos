@@ -125,7 +125,6 @@ li#menu-items, a:hover {
 }
 
 li.menu-item, a {
-    padding: 16px;
     display: inline-block;
 }
 
@@ -258,6 +257,7 @@ a.button {
     border-radius: 50px;
     font-size: 20px;
     display: inline-block;
+    border-radius: 4px;
    
 }
 
