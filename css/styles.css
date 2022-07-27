@@ -257,16 +257,11 @@ img#close-menu {
 }
 /* *Funciones del boton */
 
-.button {
-    font-size: 20px;
-    border-radius: 25px;
-}
-
 a.button {
     background-color: #af599e;
     color: #fbfbfb;
     padding: 12px 20px
-    border-radius: 10px;
+    border-radius: 50px;
     font-size: 20px;
     display: inline-block;
    
@@ -274,7 +269,7 @@ a.button {
 
 
 a.button:hover {
-    background-color:  #af599e;
+    background-color: rgba(175, 89, 158, 0.8);
     transition: backgroud-color 0,3s;
 
    
