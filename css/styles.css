@@ -122,6 +122,7 @@ img {
 li#menu-items, a:hover {
     background-color: rgba(175, 89, 158, 0.3);
     transition: background-color 0, 3s;
+    padding:0.6%
 }
 
 li.menu-item, a {
