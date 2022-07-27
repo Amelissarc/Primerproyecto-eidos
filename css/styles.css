@@ -130,12 +130,6 @@ li.menu-item, a {
 }
 
 /* Estilos para clase active */
-li.menu-item:hover,
-li.mobile-menu.active {
-    background: rgba(175, 89, 158, 0.3);
-    transition: background-color 0.3s;
-}
-
 
 .contact-links:hover, .menu-item:hover {
     scroll-behavior: smooth;
