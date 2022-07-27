@@ -78,7 +78,7 @@ body.mobile-menu active menu-active {
 /* Para quitar los puntos a los items de listas */
 ul#menu {
     display: flex;
-    font-size: 15px;  
+    font-size: 20px;  
 
 }
 
@@ -125,12 +125,13 @@ li#menu-items, a:hover {
 }
 
 li.menu-item, a {
+    padding: 16px;
     display: inline-block;
 }
 
 /* Estilos para clase active */
 li.menu-item:hover,
-li.mobile-menu active {
+li.mobile-menu.active {
     background: rgba(175, 89, 158, 0.3);
     transition: background-color 0.3s;
 }
@@ -264,8 +265,8 @@ img#close-menu {
 a.button {
     background-color: #af599e;
     color: #fbfbfb;
-    padding: 0.6%
-    border-radius: 10px;
+    padding: 12px 20px
+    border-radius: 50px;
     font-size: 20px;
     display: inline-block;
    
@@ -275,10 +276,7 @@ a.button {
 a.button:hover {
     background-color:  #af599e;
     transition: backgroud-color 0,3s;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row
+
    
 }
 
@@ -330,16 +328,16 @@ footer {
         display: block;
     }
         
-    body.mobile-menu active header { 
+    body.mobile-menu-active header { 
         height: 90px;
         align-items: center;
     }
     
-    body.mobile-menu active nav {
+    body.mobile-menu-active nav {
         height: auto;
         width: auto;
     }
-    body.mobile-menu active .navegador {
+    body.mobile-menu-active .navegador {
         flex-direction: row;}
 
         
