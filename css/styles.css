@@ -211,7 +211,7 @@ article.hablemos {
     background-color: rgba(175, 89, 158, 0.3);
     text-align:center;
     border-radius: 16px;
-    margin-left: 10%;
+   
    
 
 }   
@@ -278,6 +278,7 @@ a.button:hover {
     display: block;
     justify-content: center;
     align-items: center;
+    flex-direction: row
    
 }
 
