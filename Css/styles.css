@@ -119,29 +119,18 @@ img {
 
 /* *Funciones del menú */
 
-li#menu-items, a:hover {
-    background-color: #FFB58C;
-    transition: background-color 0, 3s;
-    border-radius:10% ;
-    -webkit-border-radius:10% ;
-    -moz-border-radius:10% ;
-    -ms-border-radius:10% ;
-    -o-border-radius:10% ;
-}
 
-li.menu-item, a {
+
+li.menu-item {
     display: inline-block;
 }
 
 /* Estilos para clase active */
 li.menu-item:hover,
 li.mobile-menu-active {
+    background-color: #FFB58C;
     transition: background-color 0.3s;
     border-radius: 10%;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10%;
-    -ms-border-radius: 10%;
-    -o-border-radius: 10%;
 }
 
 
