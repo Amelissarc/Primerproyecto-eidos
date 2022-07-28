@@ -2,7 +2,7 @@ const menuItems = document.querySelectorAll ('.menu-item');
 const menuBtn = document.querySelector ('#menu-button');
 
 
-menuBtn.addEventListener ('click', function () {
+menuBtn.addEventListener ('click', function () { 
         document.body.classList.toggle ('mobile-menu-active');
 });
 
