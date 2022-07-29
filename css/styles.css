@@ -78,7 +78,7 @@ body.mobile-menu active menu-active {
 /* Para quitar los puntos a los items de listas */
 ul#menu {
     display:flex ;
-    font-size: 30px;  
+    font-size: 20px;  
 
 }
 
@@ -128,7 +128,6 @@ li.menu-item:hover,
 li.mobile-menu-active {
     background-color: #FFB58C;
     transition: background-color 0.3s;
-    border-radius: 10%;
 }
 
 
@@ -145,7 +144,8 @@ li.mobile-menu-active {
 /* imagen de presentación "foto" */
 img.foto {
 	border-radius: 50%;
-	width: 300px;
+	height: 300px;
+    width: 220px;
 }
 /* imagenes de los logos -enlaces- */
 img.imagen {
@@ -156,11 +156,10 @@ img.imagen {
 }
 
 ul#contact-links {
-    display:flex; 
-    margin: 16px;
-    padding: 36px;
-    border-radius: 4px;
-
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+   
 }
 
 
@@ -188,30 +187,23 @@ section#inicio {
     justify-content: space-around;
     flex-direction: column;
     
-}
-
-.presentacion {
-    margin-bottom: 20px;
     
 }
+
+
 /* sección de contacto */
 section#contacto {
     display: flex;
     flex-direction: column;
-    align-items:center;
-    justify-content:center;
+    
 
 }
 
 article.hablemos {
     background-color: #FF9CAA;
     text-align:center;
-    border-radius: 16px;
-    margin-left:10%;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
+    margin-left:0.5%;
+   
 }   
 
 
@@ -222,7 +214,6 @@ article.presentacion {
     max-width: 100%;
     text-align: start;
     margin-left: 0.5%;
-    padding: 10px;
     border-radius: 15px;
 }
 /* general */
