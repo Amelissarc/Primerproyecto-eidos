@@ -120,13 +120,16 @@ img {
 /* *Funciones del menú */
  
 li.menu-item {
+    padding: 24px;
     display: inline-block;
+    margin-bottom: 10%;
+    margin-top: 20%;
 }
 
 /* Estilos para clase active */
 li.menu-item:hover,
 li.mobile-menu-active {
-    background-color: #FFB58C;
+    background-color:#FFB58C ;
     transition: background-color 0.3s;
 }
 
@@ -235,7 +238,6 @@ article {
     background: transparent;
     border: 0;
     outline: 0;
-    font-size: 26px;
     width: 40px;
     height: 40px;
 }
@@ -266,10 +268,6 @@ a.button {
 a.button:hover {
     background-color:  #FF9CAA;
     transition: backgroud-color 0,3s;
-    display:block;
-    justify-content: center;
-    align-items: center;
-   
 }
 
 footer p {
@@ -284,7 +282,7 @@ footer {
     justify-content:space-around;
     align-items: center;
     background-color: #FF9CAA;
-    color: #fbfbfb;
+   
 }
 /* Estilos desktop */
 
