@@ -1,13 +1,15 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Lato&family=Roboto:wght@100&display=swap');
+
 
 /* *Aspectos generales */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* Para que el scrolleo en la one page sea suave */
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Para que el scrolleo en la one page sea suave */
     
 }
 
@@ -35,45 +37,38 @@ header {
     top: 0;
     left: 0;
     box-shadow: 0 3px 10px -5px #5f5f5f;
-    border-bottom: 1px solid black;
 }
 
 nav {
     display: none;
 }
 
-body.mobile-menu active img#close-menu {
+body.mobile-menu-active img#close-menu {
     display: block;
 }
-body.mobile-menu active img#open-menu {
+body.mobile-menu-active img#open-menu {
     display: none;
 }
 
-body.mobile-menu active header {
+body.mobile-menu-active header {
     height: 100vh;
     flex-wrap: wrap;
     align-items: flex-start;
     transition: heigth 0.3ms;
 }
 
-body.mobile-menu active nav {
+body.mobile-menu-active nav {
     display: block;
     width: 100%;
     height: 50%;
 }
 
-body.mobile-menu active ul#menu {
+body.mobile-menu-active ul#menu {
     flex-direction: column;
     align-items: center;
     justify-content:space-around;
     height: 100%;
 }
-
-body.mobile-menu active menu-active {
-    overflow: hidden;
-}
-
-
 
 /* Para quitar los puntos a los items de listas */
 ul#menu {
@@ -108,8 +103,6 @@ h2 {
 
 p {
     margin: 16px 0;
-    line-height: 1.2;
-	font-size: 18px;
 }
 
 img {
@@ -119,25 +112,23 @@ img {
 
 /* *Funciones del menú */
  
-li.menu-item {
-    padding: 24px;
+li.menu-item a {
+    padding: 16px ;
     display: inline-block;
-    margin-bottom: 10%;
-    margin-top: 20%;
+    
 }
 
 /* Estilos para clase active */
 li.menu-item:hover,
 li.mobile-menu-active {
-    background-color:#FFB58C ;
+    background-color:#FF9CAA ;
     transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
 }
 
-
-.contact-links:hover, .menu-item:hover {
-    scroll-behavior: smooth;
-    height: 20px;
- } 
 /** Diseño de imagenes  */
 
 /* Logo Eidos imagen en header */
@@ -147,25 +138,33 @@ li.mobile-menu-active {
 /* imagen de presentación "foto" */
 img.foto {
 	border-radius: 50%;
-	height: 300px;
-    width: 220px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+img.imagen {
+    width: 80px;
 }
 /* imagenes de los logos -enlaces- */
-img.imagen {
-   margin: 36px;
-   padding: 8px;
-   border-radius: 4px;
-   width: 80px;
-}
+
 
 ul#contact-links {
     display:flex;
-    justify-content:space-around;
-    align-items: center;
-   
+    margin-top: 20px; 
 }
 
+ul#contact-links li {
+    margin: 16px;
+    padding: 8px;
+    border-radius: 4px;
+}
 
+ul#contact-links li:hover {
+    background-color: #FF9CAA;
+    transition: background-color 0.3;
+}
 /* *Diseño de Secciones */
 /* General */
 main {
@@ -175,6 +174,7 @@ main {
 
 section {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 50px;
@@ -186,27 +186,24 @@ section {
 /* sección de inicio */
 
 section#inicio {
-    flex-direction: row;
     justify-content: space-around;
-    flex-direction: column;
-    
-    
+    flex-direction: column;  
 }
 
 
 /* sección de contacto */
-section#contacto {
-    display: flex;
-    flex-direction: column;
-    
-
+section#contacto p {
+   text-align:center;
+   max-width: 600px;
+   
 }
 
 article.hablemos {
     background-color: #FF9CAA;
     text-align:center;
-    margin-left:0.5%;
-   
+    padding: 20px;
+    border-radius: 10px;
+    
 }   
 
 
@@ -214,24 +211,10 @@ article.hablemos {
 
 /* articulo de presentación */
 article.presentacion {
-    max-width: 100%;
-    text-align: start;
-    margin-left: 0.5%;
-    border-radius: 15px;
+    margin-left: 10%;
+    
 }
 /* general */
-article {
-    width: 50%;
-    text-align: start;
-    margin-left: 20%;
-    padding: 10px;
-    
-    border-radius: 15px;
-    width: 100vh;
-    height: min-content;
-
-    max-width: 100%;
-}
 
 /* Botón hamburguesa */
 #menu-button {
@@ -250,38 +233,45 @@ img#logo {
     display: none;
 }
 /* *Funciones del boton */
-
 a.button {
     background-color: #FF9CAA;
-    color: #fbfbfb;
-    border-radius: 10px;
-    font-size: 20px;
-    padding: 0.6%;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 20;
     display: inline-block;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
-
-
 a.button:hover {
     background-color:  #FF9CAA;
     transition: backgroud-color 0,3s;
 }
 
 footer p {
-    color: #fbfbfb;
+    color: #000000;
     font-size: medium;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer h1 {
+    color: #000000; 
+    font-family: 'Baskervville', serif;
+    align-items: center;
+    display: flex;
+    align-content: center;
+    font-size:x-large;
+    margin-top: 20px;
+
+    
+    
 }
 
 footer {
     height: 90px;
-    width: 100%;
     display: flex;
-    justify-content:space-around;
+    justify-content: center;
     align-items: center;
     background-color: #FF9CAA;
+    flex-direction: column;
+    line-height: 10px;
    
 }
 /* Estilos desktop */
@@ -301,12 +291,9 @@ footer {
         flex-direction: row;
     }
 
-    article {
-        width: 50%;
-    }
-
     ul#contact-link li {
         margin: 16px;
+    
     }
 
 /* ajustes para menu  */
@@ -329,8 +316,10 @@ footer {
         height: auto;
         width: auto;
     }
-    body.mobile-menu-active .navegador {
-        flex-direction: row;}
+    
+    body.mobile-menu-activate {
+        overflow: auto;
+    }
     
   
 }
