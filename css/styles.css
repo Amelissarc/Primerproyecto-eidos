@@ -19,7 +19,12 @@ body {
     line-height: 1.2;
     background-color:whitesmoke;
     color: #0f0f0f;
-}
+    height: 450px;
+    background-image:url(/fondo.jpg); 
+    background-size: cover;
+    background-position: center; 
+} 
+    
 
 ul { 
     list-style: none;
